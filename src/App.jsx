@@ -1,11 +1,13 @@
-import Data from "./components/Data"
+import Descripcion from "./components/Descripcion"
+import Navbar from "./components/Navbar"
+
 
 function App() {
 
   return (
     <div>
-      <h1>siiiuuu</h1>
-      <Data />
+      <Navbar />
+      <Descripcion />
     </div>
   )
 }
