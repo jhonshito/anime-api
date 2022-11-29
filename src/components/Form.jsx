@@ -17,7 +17,6 @@ const Form = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         setSearch(texto)
-        console.log(texto)
     }
   return (
     <section className='text-white mt-28 grid justify-center md:flex md:justify-around'>

@@ -13,7 +13,9 @@ module.exports = {
         "mora" : "#5E17EB",
         "moradito" : "#05001B",
         "azul" : "#27ADAC",
-        "transparente" : "#23252B"
+        "transparente" : "#23252B",
+        "fondo" : "#d1ecf1",
+        "colorText" : "#007bff"
       }
     },
   },

@@ -31,9 +31,8 @@ const Descripcion = () => {
     },[url])
 
   return (
-    <div className='text-white mt-16'>
-      <PosteImg datos={datos.images} />
-      {/* Descripcion */}
+    <div className='text-white mt-20 md:mx-auto md:w-[90%]'>
+      <PosteImg datos={datos} />
     </div>
   )
 }

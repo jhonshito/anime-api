@@ -10,7 +10,6 @@ const Data = () => {
     const { search } = useContext(UserContext);
 
     const [data, setData] = useState([])
-    console.log(search)
     // const naruto = 'one puch man'
 
     const urldata = `https://api.jikan.moe/v4/anime?q=${search}`
@@ -26,8 +25,6 @@ const Data = () => {
             console.log(error)
         }
     }
-
-    console.log(data)
 
     useEffect(() => {
         fetchMovies()

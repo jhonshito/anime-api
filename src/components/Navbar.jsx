@@ -3,7 +3,7 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <header className='text-white bg-transparente fixed top-0 w-full justify-around flex h-16 items-center'>
+    <header className='text-white z-10 bg-transparente fixed top-0 w-full justify-around flex h-16 items-center'>
         <div className='flex font-bold text-3xl uppercase'>
             <h2>anime</h2>
             <h2 className='text-azul'>trailer</h2>
