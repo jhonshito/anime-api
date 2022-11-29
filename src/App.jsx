@@ -1,4 +1,4 @@
-import Descripcion from "./components/Descripcion"
+import { Outlet } from "react-router-dom"
 import Navbar from "./components/Navbar"
 
 
@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
       <Navbar />
-      <Descripcion />
+      <Outlet />
     </div>
   )
 }
