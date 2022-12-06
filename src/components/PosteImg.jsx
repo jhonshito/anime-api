@@ -3,11 +3,20 @@ import React from 'react'
 
 const PosteImg = ({ datos }) => {
 
+  console.log(datos)
+
   return (
     <section className='w-full block md:flex py-10'>
       <div className='grid'>
-        <img className='md:ml-10 mx-auto' src={datos.images == undefined ? datos = '' : datos.images.jpg.image_url} alt="" />
-        <a className='md:absolute md:bottom-28 mt-5 mx-auto h-8 bg-azul md:ml-14 w-48 text-center' href={datos.trailer == undefined ? datos = '' : datos.trailer.url} target='_blank'>Ver Trailer</a>
+        <div>
+          <img className='mx-auto' src={datos.images == undefined ? datos = '' : datos.images.jpg.image_url} alt="" />
+
+          {
+            datos.trailer == undefined ? datos = '' :
+            datos.trailer.embed_url == null ? <p className='text-center mt-5 py-2 w-60 break-words mx-auto uppercase font-bold bg-fondo rounded-lg text-azul '>Trailer actualmente no disponible</p> :
+          <a className='mt-5 mx-auto  py-2 rounded-lg bg-azul flex justify-center  w-52 text-center' href={datos.trailer == undefined ? datos = '' : datos.trailer.url} target='_blank'>Ver Trailer</a>
+          }
+        </div>
       </div>
 
       <div className='md:w-[70%] w-full mt-9 md:mt-0 md:ml-12'>

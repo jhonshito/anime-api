@@ -1,5 +1,6 @@
 
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
@@ -9,7 +10,7 @@ const Navbar = () => {
             <h2 className='text-azul'>trailer</h2>
         </div>
         <nav>
-            <button className='uppercase bg-azul w-20 h-9 rounded-md'>Inicio</button>
+            <Link to='/' className='uppercase bg-azul px-3 py-2 rounded-md'>Inicio</Link>
         </nav>
     </header>
   )

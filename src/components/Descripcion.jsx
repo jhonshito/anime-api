@@ -24,9 +24,6 @@ const Descripcion = () => {
     }
 
     useEffect(() => {
-      // fetch(url)
-      // .then(res => res.json())
-      // .then(daticos => setDatos(daticos.data))
       fetchMovies()
     },[url])
 
