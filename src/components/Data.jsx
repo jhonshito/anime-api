@@ -12,7 +12,7 @@ const Data = () => {
     const [data, setData] = useState([])
     // const naruto = 'one puch man'
 
-    const urldata = `https://api.jikan.moe/v4/anime?q=${search}`
+    const urldata = `https://api.jikan.moe/v4/manga?q=${search}`
 
     const fetchMovies = async() => {
 
